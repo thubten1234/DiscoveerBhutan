@@ -21,6 +21,7 @@ function Home() {
         </Container>
       </div>
       <div className="intro-01">
+        {/*Culture & Cuisine Section*/}
         <div className="container my-5">
           <div className="d-flex flex-column flex-md-row align-items-center">
             <div className="image-container flex-shrink-0 mb-4 mb-md-0">
@@ -31,53 +32,22 @@ function Home() {
               />
             </div>
 
-            <div className="text-container ms-md-4">
-              <h1 className="display-6">
-                Experience Bhutan's Rich Culture and Cuisine
-              </h1>
+            <div className="text-container">
+              <h1>Experience Bhutan's Rich Culture and Cuisine</h1>
               <p className="lead">
-                <strong>
-                  Immerse yourself in Bhutan’s vibrant culture and savor its
-                  unique cuisine. Witness colorful festivals, explore ancient
-                  monasteries, and connect with the warmth of local traditions.
-                  Relish authentic Bhutanese dishes like Ema Datshi and Suja,
-                  offering a perfect blend of flavor and heritage. Experience
-                  the harmony of tradition and taste in every moment.
-                </strong>
+                Immerse yourself in Bhutan's vibrant culture and savor its
+                unique cuisine. Witness colorful festivals, explore ancient
+                monasteries, and connect with the warmth of local traditions.
+                Relish authentic Bhutanese dishes like Ema Datshi and Suja,
+                offering a perfect blend of flavor and heritage. Experience the
+                harmony of tradition and taste in every moment.
               </p>
             </div>
           </div>
         </div>
-
-        <div>
-          <div className="container my-5">
-            <div className="d-flex flex-column flex-md-row align-items-center">
-              <div className="text-container ms-md-4">
-                <h1 className="display-6">
-                  Experience Bhutan's Spiritual Heritage
-                </h1>
-                <p className="lead">
-                  <strong>
-                    Immerse yourself in Bhutan’s profound spiritual traditions
-                    and explore its sacred sites. Witness vibrant religious
-                    festivals, visit ancient monasteries like Tiger’s Nest and
-                    Punakha Dzong, and connect with the peaceful practices of
-                    Buddhism. Discover the harmony of faith, culture, and
-                    heritage in every serene moment of your journey.
-                  </strong>
-                </p>
-              </div>
-              <div className="image-container flex-shrink-0 mb-4 mb-md-0">
-                <img
-                  src="/image/spacer-div-002.png"
-                  alt="Description"
-                  className="custom-img-size"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+
+      {/*Background Info */}
       <div className="info">
         <img
           src="/image/background-01.png"
