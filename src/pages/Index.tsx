@@ -22,7 +22,7 @@ function Home() {
       </div>
       <div className="intro-01">
         {/*Culture & Cuisine Section*/}
-        <div className="container my-5">
+        <div className="container my-1">
           <div className="d-flex flex-column flex-md-row align-items-center">
             <div className="image-container flex-shrink-0 mb-4 mb-md-0">
               <img
@@ -35,13 +35,42 @@ function Home() {
             <div className="text-container">
               <h1>Experience Bhutan's Rich Culture and Cuisine</h1>
               <p className="lead">
-                Immerse yourself in Bhutan's vibrant culture and savor its
-                unique cuisine. Witness colorful festivals, explore ancient
-                monasteries, and connect with the warmth of local traditions.
-                Relish authentic Bhutanese dishes like Ema Datshi and Suja,
-                offering a perfect blend of flavor and heritage. Experience the
-                harmony of tradition and taste in every moment.
+                <strong>
+                  Immerse yourself in Bhutan's vibrant culture and savor its
+                  unique cuisine. Witness colorful festivals, explore ancient
+                  monasteries, and connect with the warmth of local traditions.
+                  Relish authentic Bhutanese dishes like Ema Datshi and Suja,
+                  offering a perfect blend of flavor and heritage. Experience
+                  the harmony of tradition and taste in every moment.
+                </strong>
               </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          {/*Religion Section*/}
+          <div className="container my-1">
+            <div className="d-flex flex-column flex-md-row-reverse align-items-center">
+              <div className="image-container flex-shrink-0 mb-4 mb-md-0">
+                <img
+                  src="/image/spacer-div-002.png"
+                  alt="Description"
+                  className="custom-img-size"
+                />
+              </div>
+              <div className="text-container ms-md-4">
+                <h1>Experience Bhutan's Spiritual Heritage</h1>
+                <p className="lead">
+                  <strong>
+                    Immerse yourself in Bhutan’s profound spiritual traditions
+                    and explore its sacred sites. Witness vibrant religious
+                    festivals, visit ancient monasteries like Tiger’s Nest and
+                    Punakha Dzong, and connect with the peaceful practices of
+                    Buddhism. Discover the harmony of faith, culture, and
+                    heritage in every serene moment of your journey.
+                  </strong>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -54,7 +83,7 @@ function Home() {
           alt="background-div-01"
           className="bgimg-01 "
         />
-        <div className="Description-01 position-absolute top-50 start-50 translate-right  text-center text-white">
+        <div className="Description-01 position-absolute top-55 start-50 translate-right  text-center text-white">
           <Container>
             <h3 className="heading-responsive display-4 display-sm-5 display-md-6 display-lg-7">
               Experience the Magic of Bhutan
@@ -67,6 +96,41 @@ function Home() {
               culture, and tranquility.
             </p>
           </Container>
+        </div>
+      </div>
+
+      <div className="cassroule">
+        <div className="row">
+          <div className="column">
+            <img src="/image/grid-gallery-002.jpg" />
+            <img src="/image/grid-gallery-003.jpg" />
+            <img src="/image/grid-gallery-004.jpg" />
+
+            <img src="/image/grid-gallery-015.jpg" />
+          </div>
+
+          <div className="column">
+            <img src="/image/grid-gallery-006.jpg" />
+            <img src="/image/grid-gallery-007.jpg" />
+            {/* <img src="/image/grid-gallery-008.jpg" />
+            <img src="/image/grid-gallery-009.jpg" /> */}
+            <img src="/image/grid-gallery-010.jpg" />
+            <img src="/image/grid-gallery-011.jpg" />
+          </div>
+          <div className="column">
+            <img src="/image/grid-gallery-013.jpg" />
+            <img src="/image/grid-gallery-014.jpg" />
+            <img src="/image/grid-gallery-023.jpg" />
+
+            <img src="/image/grid-gallery-016.jpg" />
+            <img src="/image/grid-gallery-005.jpg" />
+          </div>
+          <div className="column">
+            <img src="/image/grid-gallery-018.jpg" />
+            <img src="/image/grid-gallery-019.jpg" />
+            <img src="/image/grid-gallery-020.jpg" />
+            <img src="/image/grid-gallery-022.jpg" />
+          </div>
         </div>
       </div>
     </>
