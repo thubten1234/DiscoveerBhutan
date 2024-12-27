@@ -77,7 +77,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Gallery />
+
       {/*Background Info */}
       <div className="info">
         <img
@@ -100,6 +100,7 @@ function Home() {
           </Container>
         </div>
       </div>
+      <Gallery />
       <div className="contact-form">
         <div className="shadow-fade-overlay">
           {"contact form "}
