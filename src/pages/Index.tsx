@@ -1,5 +1,7 @@
 import "../App.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 import { Container } from "react-bootstrap";
 
 function Home() {
@@ -75,7 +77,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <Gallery />
       {/*Background Info */}
       <div className="info">
         <img
@@ -98,40 +100,26 @@ function Home() {
           </Container>
         </div>
       </div>
+      <div className="contact-form">
+        <div className="shadow-fade-overlay">
+          {" "}
+          <div className="contact-form-title">
+            <h1>
+              You're Only A Click <br /> Away From Your Dream Escape
+            </h1>
+            <br />
 
-      <div className="cassroule">
-        <div className="row">
-          <div className="column">
-            <img src="/image/grid-gallery-002.jpg" />
-            <img src="/image/grid-gallery-003.jpg" />
-            <img src="/image/grid-gallery-004.jpg" />
+            <p className="lead">
+              Discover Bhutan, where serene landscapes and timeless traditions
+              create the perfect escape for your dream holiday
+            </p>
 
-            <img src="/image/grid-gallery-015.jpg" />
-          </div>
-
-          <div className="column">
-            <img src="/image/grid-gallery-006.jpg" />
-            <img src="/image/grid-gallery-007.jpg" />
-
-            <img src="/image/grid-gallery-010.jpg" />
-            <img src="/image/grid-gallery-011.jpg" />
-          </div>
-          <div className="column">
-            <img src="/image/grid-gallery-013.jpg" />
-            <img src="/image/grid-gallery-014.jpg" />
-            <img src="/image/grid-gallery-023.jpg" />
-
-            <img src="/image/grid-gallery-016.jpg" />
-            <img src="/image/grid-gallery-005.jpg" />
-          </div>
-          <div className="column">
-            <img src="/image/grid-gallery-018.jpg" />
-            <img src="/image/grid-gallery-019.jpg" />
-            <img src="/image/grid-gallery-020.jpg" />
-            <img src="/image/grid-gallery-022.jpg" />
+            <button className="contact-button"> Get in Touch</button>
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

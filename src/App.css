@@ -68,26 +68,25 @@ body {
 /* Responsive Design */
 @media (max-width: 992px) {
   .info {
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .bgimg-01 {
-    width: 100%; /* Full width for smaller screens */
-    margin-bottom: 20px;
+    width: 100%;
   }
 
   .Description-01 {
-    max-width: 90%; /* Allow the description to take up more space */
+    max-width: 90%;
     text-align: center;
   }
 
   .heading-responsive {
-    font-size: 2rem; /* Adjust font size */
+    font-size: 2rem;
   }
 
   .lead {
-    font-size: 1.4rem; /* Adjust paragraph size */
+    font-size: 1.4rem;
   }
 }
 
@@ -172,7 +171,6 @@ body {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -185,5 +183,164 @@ body {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+.gallery {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  height: 70vh;
+  border-radius: 8px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.253);
+}
+
+.contact-form {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/image/grid-gallery-009.jpg");
+}
+
+.shadow-fade-overlay {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form-title {
+  font-size: 3rem;
+  position: relative;
+  color: white;
+  z-index: 1;
+  top: 40%;
+  left: 10%;
+  text-align: left;
+  margin: 0;
+}
+
+.contact-button {
+  all: unset;
+  width: 15%;
+  border-radius: 10px;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contact-button:hover {
+  background-color: #00000030;
+  color: white;
+  border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+  .contact-form-title {
+    font-size: 2rem;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+  }
+
+  .contact-button {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-title {
+    font-size: 1.5rem;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+  }
+
+  .contact-button {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  font-size: 14px;
+  height: 70vh;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  margin-bottom: 30px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column .social-links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-column .social-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ddd;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 10px;
   }
 }
