@@ -237,6 +237,7 @@ body {
   z-index: 1;
   top: 40%;
   left: 10%;
+  max-width: 90%;
   text-align: left;
   margin: 0;
 }

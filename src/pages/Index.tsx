@@ -102,7 +102,7 @@ function Home() {
       </div>
       <div className="contact-form">
         <div className="shadow-fade-overlay">
-          {" "}
+          {"contact form "}
           <div className="contact-form-title">
             <h1>
               You're Only A Click <br /> Away From Your Dream Escape
