@@ -112,8 +112,7 @@ function Home() {
           <div className="column">
             <img src="/image/grid-gallery-006.jpg" />
             <img src="/image/grid-gallery-007.jpg" />
-            {/* <img src="/image/grid-gallery-008.jpg" />
-            <img src="/image/grid-gallery-009.jpg" /> */}
+
             <img src="/image/grid-gallery-010.jpg" />
             <img src="/image/grid-gallery-011.jpg" />
           </div>
