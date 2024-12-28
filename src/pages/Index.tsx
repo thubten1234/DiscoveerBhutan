@@ -91,7 +91,7 @@ function Home() {
               Experience the Magic of Bhutan
             </h3>
             <p className="text-responsive lead">
-              Journey through Bhutan’s stunning landscapes, rich culture, and
+              Journey through Bhutan's stunning landscapes, rich culture, and
               spirituality. Visit iconic sites like Tiger's Nest and Punakha
               Dzong, trek the Himalayas, and experience vibrant festivals and
               traditional cuisine. Bhutan offers a unique blend of adventure,
