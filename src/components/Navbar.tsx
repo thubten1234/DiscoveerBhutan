@@ -1,69 +1,51 @@
-import { useState, useEffect } from "react";
-import "./Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbar() {
-  const [scrollingUp, setScrollingUp] = useState(false);
-  const [atTop, setAtTop] = useState(true);
-
-  let lastScrollTop = 0;
-
-  const handleScroll = () => {
-    const currentScroll = window.pageYOffset;
-
-    // Check if the user is at the top of the page
-    if (currentScroll === 0) {
-      setAtTop(true);
-    } else {
-      setAtTop(false);
-    }
-
-    if (currentScroll > lastScrollTop) {
-      setScrollingUp(false); // Scrolling down
-    } else {
-      setScrollingUp(true); // Scrolling up
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <div>
-      <div className="banner">Your Banner Here</div>
-      <header
-        className={`navbar ${
-          scrollingUp ? "navbar-visible" : "navbar-hidden"
-        } ${atTop ? "navbar-top" : ""}`}
-      >
-        <div className="container">
-          <a href="#" className="logo">
-            Logo
-          </a>
-          <nav>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          Discover Bhutan
+        </a>
+        {/* Hamburger icon for mobile screens */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        {/* Collapsible navbar items */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link active" href="#home">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#services">
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-      </header>
-    </div>
+      </div>
+    </nav>
   );
 }
 
