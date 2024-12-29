@@ -2,11 +2,14 @@ import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
+
 import { Container } from "react-bootstrap";
+import { Analytics } from "@vercel/analytics/react";
 
 function Home() {
   return (
     <>
+      <Analytics />
       <Navbar />
       <div className="banner">
         <img src="/image/Banner.png" alt="Banner" className="img-fluid" />
