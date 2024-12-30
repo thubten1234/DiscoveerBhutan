@@ -30,9 +30,18 @@ body {
 }
 
 .navbar {
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+}
+
+.navbar.solid {
   background-color: #333;
 }
 
@@ -44,7 +53,6 @@ body {
 .nav-list li {
   list-style: none;
 }
-
 .nav-list li a {
   color: white;
   text-decoration: none;

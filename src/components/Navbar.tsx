@@ -5,6 +5,7 @@ import "./Navbar.css";
 function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isTop, setIsTop] = useState(true);
 
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
@@ -15,6 +16,13 @@ function Navbar() {
       setShowNavbar(true);
     }
     setLastScrollY(window.scrollY);
+
+    // Check if at the top of the page
+    if (window.scrollY === 0) {
+      setIsTop(true);
+    } else {
+      setIsTop(false);
+    }
   };
 
   useEffect(() => {
@@ -26,9 +34,9 @@ function Navbar() {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg navbar-dark bg-dark sticky-top ${
+      className={`navbar navbar-expand-lg navbar-dark sticky-top ${
         showNavbar ? "show" : "hide"
-      }`}
+      } ${isTop ? "transparent" : "solid"}`}
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -48,7 +56,7 @@ function Navbar() {
         </button>
         {/* Collapsible navbar items */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto nav-list">
             <li className="nav-item">
               <a className="nav-link active" href="#home">
                 Home
