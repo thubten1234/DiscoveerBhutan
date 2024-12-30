@@ -10,7 +10,7 @@ function Home() {
     <>
       <Navbar />
       <div className="banner">
-        <img src="/image/Banner.png" alt="Banner" className="img-fluid" />
+        <img src="/image/Banner.webp" alt="Banner" className="img-fluid" />
       </div>
 
       <div className="banner-text position-absolute top-50 start-50 translate-middle text-center text-white">
