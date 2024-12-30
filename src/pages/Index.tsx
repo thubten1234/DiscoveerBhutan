@@ -82,7 +82,7 @@ function Home() {
       {/*Background Info */}
       <div className="info">
         <img
-          src="/image/background-01.png"
+          src="/image/background-01.webp"
           alt="background-div-01"
           className="bgimg-01 "
         />
