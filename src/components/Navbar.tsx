@@ -6,6 +6,7 @@ function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isTop, setIsTop] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
@@ -25,6 +26,10 @@ function Navbar() {
     }
   };
 
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -34,28 +39,32 @@ function Navbar() {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg navbar-dark sticky-top ${
+      className={`navbar navbar-expand-lg navbar-dark ${
         showNavbar ? "show" : "hide"
-      } ${isTop ? "transparent" : "solid"}`}
+      } ${isTop ? "transparent" : "solid"} ${isExpanded ? "expanded" : ""}`}
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Discover Bhutan
         </a>
-
+        {/* Hamburger icon for mobile screens */}
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isExpanded ? "true" : "false"}
           aria-label="Toggle navigation"
+          onClick={handleToggle}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
-        <div className="collapse navbar-collapse" id="navbarNav">
+        {/* Collapsible navbar items */}
+        <div
+          className={`collapse navbar-collapse ${isExpanded ? "show" : ""}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav ms-auto nav-list">
             <li className="nav-item">
               <a className="nav-link active" href="#home">

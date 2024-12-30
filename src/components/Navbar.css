@@ -30,9 +30,9 @@ body {
 }
 
 .navbar {
-  width: 100%;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
 }
@@ -41,7 +41,8 @@ body {
   background-color: transparent;
 }
 
-.navbar.solid {
+.navbar.solid,
+.navbar.expanded {
   background-color: #333;
 }
 
@@ -53,6 +54,7 @@ body {
 .nav-list li {
   list-style: none;
 }
+
 .nav-list li a {
   color: white;
   text-decoration: none;
@@ -64,9 +66,7 @@ body {
 }
 
 .nav-list li a:hover {
-  color: #333;
-  background-color: white;
-  transform: scale(1.1);
+  color: #000000;
 }
 
 .island {
