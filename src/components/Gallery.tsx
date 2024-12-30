@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Gallery() {
   return (
     <div className="gallery py-5">
-      <h1 className="text-center mb-4">Glimpse of Bhutan</h1>
+      <h1 className="text-center mb-4">Experience Bhutans Culture</h1>
 
       <Carousel>
         {/* Carousel Item 1 */}
@@ -17,7 +17,7 @@ function Gallery() {
                   src="/image/grid-gallery-002.jpg"
                   alt="Gallery Item 1"
                 />
-                <h5 className="text-center mt-2">Experience Bhutan's Beauty</h5>
+                <h5 className="text-center mt-2">Sacred Sites </h5>
               </Col>
               <Col md={4}>
                 <img
@@ -25,7 +25,7 @@ function Gallery() {
                   src="/image/grid-gallery-003.jpg"
                   alt="Gallery Item 2"
                 />
-                <h5 className="text-center mt-2">Vibrant Festivals</h5>
+                <h5 className="text-center mt-2">Vibrant Architecture </h5>
               </Col>
               <Col md={4}>
                 <img
@@ -54,7 +54,7 @@ function Gallery() {
               <Col md={4}>
                 <img
                   className="d-block w-100 gallery-image"
-                  src="/image/grid-gallery-002.jpg"
+                  src="/image/grid-gallery-014.jpg"
                   alt="Gallery Item 5"
                 />
                 <h5 className="text-center mt-2">Hidden Valleys</h5>
@@ -62,7 +62,7 @@ function Gallery() {
               <Col md={4}>
                 <img
                   className="d-block w-100 gallery-image"
-                  src="/image/grid-gallery-003.jpg"
+                  src="/image/grid-gallery-015.jpg"
                   alt="Gallery Item 6"
                 />
                 <h5 className="text-center mt-2">Sacred Traditions</h5>
