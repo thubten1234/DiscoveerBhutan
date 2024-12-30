@@ -42,7 +42,7 @@ function Navbar() {
         <a className="navbar-brand" href="#">
           Discover Bhutan
         </a>
-        {/* Hamburger icon for mobile screens */}
+
         <button
           className="navbar-toggler"
           type="button"
@@ -54,7 +54,7 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/* Collapsible navbar items */}
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto nav-list">
             <li className="nav-item">
