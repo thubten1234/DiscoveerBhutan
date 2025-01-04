@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -44,10 +44,10 @@ function Navbar() {
       } ${isTop ? "transparent" : "solid"} ${isExpanded ? "expanded" : ""}`}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <p className="navbar-brand d-none d-lg-block ms-auto">
           Discover Bhutan
-        </a>
-        {/* Hamburger icon for mobile screens */}
+        </p>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -60,26 +60,25 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/* Collapsible navbar items */}
         <div
           className={`collapse navbar-collapse ${isExpanded ? "show" : ""}`}
           id="navbarNav"
         >
           <ul className="navbar-nav ms-auto nav-list">
             <li className="nav-item">
-              <a className="nav-link active" href="#home">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <Link to="/aboutus" className="nav-link">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services">
-                Services
-              </a>
+              <Link to="/service" className="nav-link">
+                Explore
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">

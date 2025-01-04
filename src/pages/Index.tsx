@@ -47,6 +47,8 @@ function Home() {
                   the harmony of tradition and taste in every moment.
                 </strong>
               </p>
+
+              <button className="learn-btn btn-primary">Learn More</button>
             </div>
           </div>
         </div>
@@ -73,6 +75,7 @@ function Home() {
                     heritage in every serene moment of your journey.
                   </strong>
                 </p>
+                <button className="learn-btn btn-primary">Learn More</button>
               </div>
             </div>
           </div>
