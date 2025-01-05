@@ -1,6 +1,7 @@
 import "../components/Services.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+
 const Service = () => {
   const items = [
     {
@@ -28,10 +29,10 @@ const Service = () => {
       image: "./image/bumthang.webp",
     },
     {
-      title: "Dochula",
+      title: "Wangdue Phodrang",
       description: "Immerse yourself in Dochula’s mesmerizing celebrations.",
       link: "",
-      image: "./image/dochula.webp",
+      image: "./image/wangdue.webp",
     },
     {
       title: "Trongsa",
@@ -45,7 +46,12 @@ const Service = () => {
     <>
       <Navbar />
       <div className="intro-banner">
-        <h1 className="intro-banner-title">EXPLORE</h1>
+        <img
+          src="./image/intro-banner.webp"
+          className="img-fluid"
+          alt="intro-banner"
+        />
+        <h1 className="intro-banner-title">Explore</h1>
       </div>
       <div className="image-grid-container">
         {items.map((item, index) => (
