@@ -332,9 +332,9 @@ body {
 .footer_reveal {
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
   display: flex;
-  align-items: flex-end; /* Footer aligns at the bottom of the image */
+  align-items: flex-end;
 }
 
 .footer_reveal-image {
