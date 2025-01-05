@@ -6,31 +6,31 @@ const Service = () => {
   const items = [
     {
       title: "Punakha ",
-      description: "Experience the vibrant Punakha .",
+      description: "",
       link: "",
       image: "./image/punakha.jpg",
     },
     {
       title: "Thimphu",
-      description: "Explore the colorful celebrations of Thimphu.",
+      description: "",
       link: "",
       image: "./image/thimphu.webp",
     },
     {
       title: "Paro",
-      description: "Discover the beauty of Paro.",
+      description: "",
       link: "",
       image: "./image/paro.webp",
     },
     {
       title: "Bumthang",
-      description: "Uncover the spirituality of Bumthang’s unique festival.",
+      description: "",
       link: "",
       image: "./image/bumthang.webp",
     },
     {
       title: "Wangdue Phodrang",
-      description: "Immerse yourself in Dochula’s mesmerizing celebrations.",
+      description: "",
       link: "",
       image: "./image/wangdue.webp",
     },
