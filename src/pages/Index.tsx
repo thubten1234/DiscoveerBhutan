@@ -2,7 +2,7 @@ import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
-
+import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 function Home() {
@@ -119,7 +119,13 @@ function Home() {
               create the perfect escape for your dream holiday
             </p>
 
-            <button className="contact-button"> Get in Touch</button>
+            <Link
+              to="/contactus"
+              className="contact-button"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Get in Touch
+            </Link>
           </div>
         </div>
       </div>

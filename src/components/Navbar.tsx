@@ -66,22 +66,38 @@ function Navbar() {
         >
           <ul className="navbar-nav ms-auto nav-list">
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <Link
+                to="/"
+                className="nav-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/aboutus" className="nav-link">
+              <Link
+                to="/aboutus"
+                className="nav-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/service" className="nav-link">
+              <Link
+                to="/service"
+                className="nav-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 Explore
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/contactus" className="nav-link">
+              <Link
+                to="/contactus"
+                className="nav-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 Contact
               </Link>
             </li>
