@@ -28,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 50vh;
+  margin-bottom: 10%;
 }
 
 .intro-banner-title {
@@ -97,7 +98,6 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .info {
     flex-direction: column;
@@ -135,9 +135,11 @@ body {
     object-fit: cover;
   }
   .heading-responsive {
-    font-size: 1.5rem; /* Further reduce font size on very small screens */
+    font-size: 1.5rem;
   }
-
+  .intro-banner {
+    margin-bottom: 0;
+  }
   .lead {
     font-size: 1rem;
     margin-bottom: 20%;
@@ -177,13 +179,13 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px; /* Adjusts for medium screens and larger */
+    max-width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 970px; /* Adjusts for large screens */
+    max-width: 970px;
   }
 }
 
@@ -193,7 +195,6 @@ body {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
@@ -213,14 +214,13 @@ body {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
 }
-/* Gallery Container */
+
 .gallery {
   background-color: #f8f9fa;
   padding: 20px 0;
@@ -232,19 +232,16 @@ body {
   color: #2c3e50;
 }
 
-/* Image Styling */
 .gallery-image {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading Below Images */
 .gallery h5 {
   font-size: 1.1rem;
   color: #555;
 }
 
-/* Carousel Item Styling */
 .carousel-item {
   padding: 20px 0;
 }
@@ -375,7 +372,7 @@ body {
 }
 
 .footer_reveal-image:not(.revealed) {
-  transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 50%, 0);
   opacity: 0;
 }
 .footer-column ul {
@@ -427,6 +424,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  margin: 160px 0 0;
   justify-content: center;
 }
 
@@ -509,4 +507,85 @@ body {
     flex-direction: column;
     gap: 30px;
   }
+  .mycontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mycontainer input[type="text"],
+  .mycontainer input[type="email"] {
+    width: 200%;
+  }
+  .mycontainer textarea {
+    width: 200%;
+  }
+}
+
+/*contact us form*/
+.contact-div {
+  height: 100vh;
+  position: relative;
+
+  padding: 20px;
+  background-image: url("./image/grid-gallery-018.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-form-outer {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 0;
+  padding: 10px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  width: 60%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.mycontainer {
+  text-align: left;
+  width: 100%;
+  overflow: none;
+  margin: 50px;
+  font-size: 1.2rem;
+  color: white;
+}
+div.mycontainer div {
+  width: 50%;
+  float: left;
+}
+.mycontainer label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: right;
+}
+.mycontainer input,
+textarea {
+  all: unset;
+  border-bottom: 2px solid #ccc;
+  background-color: #242424b4;
+  width: 100%;
+  scrollbar-width: none;
+  overflow-wrap: break-word;
+  text-align: left;
+  direction: ltr;
+  transition: border-color 0.3s ease-in-out;
+}
+.contact-form-right {
+  text-align: right;
+}
+.contact-form-button {
+  all: unset;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.387);
+  padding: 5px;
 }

@@ -81,9 +81,9 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <Link to="/contactus" className="nav-link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
