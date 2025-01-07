@@ -6,8 +6,8 @@ function Contactus() {
       <Navbar />
       <div className="intro-banner">
         <img
-          src="./image/intro-banner.webp"
-          className="img-fluid"
+          src="./image/Banner.webp"
+          className="img-fluid intro-banner-image"
           alt="intro-banner"
         />
         <h1 className="intro-banner-title">GET IN TOUCH WITH US</h1>

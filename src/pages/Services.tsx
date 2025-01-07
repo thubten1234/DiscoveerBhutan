@@ -47,11 +47,11 @@ const Service = () => {
       <Navbar />
       <div className="intro-banner">
         <img
-          src="./image/intro-banner.webp"
-          className="img-fluid"
+          src="./image/Banner.webp"
+          className="img-fluid intro-banner-image"
           alt="intro-banner"
         />
-        <h1 className="intro-banner-title">Explore</h1>
+        <h1 className="intro-banner-title">EXPLORE</h1>
       </div>
       <div className="image-grid-container">
         {items.map((item, index) => (
