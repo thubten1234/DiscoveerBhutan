@@ -55,7 +55,7 @@ function Footer() {
             <Col xs={12} md={4} className="footer-column">
               <h5>Contact</h5>
               <ul>
-                <li>Email: : discoverbhutanholidays@gmail.com</li>
+                <li>Email: discoverbhutanholidays@gmail.com</li>
                 <li>Phone: +97517727077</li>
                 <li>Address: Thimphu, Bhutan</li>
               </ul>
