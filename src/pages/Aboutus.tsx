@@ -15,7 +15,8 @@ function Aboutus() {
       </div>
       {/* Main Banner Section */}
       <div className="aboutus-banner">
-        <div className="aboutus-banner-overlay">
+        <img src="/image/grid-gallery-012.jpg" alt="About Us Banner" />
+        <div className="aboutus-banner-overlay ">
           <div className="aboutus-banner-content">
             <h2>A culture of thinkers & makers.</h2>
             <p>
@@ -42,7 +43,6 @@ function Aboutus() {
         </div>
       </div>
 
-      {/* Additional Content Section */}
       <div className="aboutus-extra">
         <h3>Uncovering Hidden Gems of Bhutan</h3>
         <div className="extra-grid">

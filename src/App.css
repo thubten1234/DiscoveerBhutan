@@ -425,21 +425,29 @@ body {
 
 /*about us*/
 
-.aboutus-banner {
-  background: url("./image/grid-gallery-012.jpg") center/cover no-repeat;
+.aboutus-banner img {
   height: 100vh;
   position: relative;
   display: flex;
+  width: 100%;
+  object-fit: cover;
   align-items: center;
   margin: 160px 0 0;
   justify-content: center;
 }
-
 .aboutus-banner-overlay {
   background: rgba(0, 0, 0, 0.6);
-  padding: 50px;
+  padding: 20px;
   max-width: 800px;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -230%);
+  position: relative;
+  text-align: center;
+}
+.aboutus-banner {
+  height: 100vh;
 }
 
 .aboutus-banner-content h2 {
@@ -455,11 +463,34 @@ body {
   color: #ddd;
 }
 
-.aboutus-banner-content a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #383838;
-  transition: color 0.3s;
+@media (max-width: 768px) {
+  .aboutus-banner img {
+    margin: 0;
+  }
+  .aboutus-banner-content {
+    position: relative;
+    width: 100%; /* Adjusts the content width for smaller screens */
+    padding: 10px;
+  }
+  .aboutus-banner-content p {
+    font-size: 1rem;
+
+    line-height: 1.5;
+  }
+  .aboutus-banner-overlay {
+    width: 100%;
+
+    transform: translate(-50%, -190%);
+  }
+  .aboutus-banner-content h2 {
+    font-size: 1.8rem; /* Scales down the heading */
+  }
+  .aboutus-banner img {
+    height: 80vh;
+  }
+  .aboutus-banner {
+    height: 80vh;
+  }
 }
 
 .aboutus-extra {
