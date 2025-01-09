@@ -226,6 +226,9 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+  .intro-banner-image{
+    margin-top: 0;
+  }
 }
 
 .gallery {
