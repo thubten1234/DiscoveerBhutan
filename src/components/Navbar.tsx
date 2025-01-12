@@ -85,7 +85,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/service"
+                to="/explore"
                 className="nav-link"
                 onClick={() => window.scrollTo(0, 0)}
               >

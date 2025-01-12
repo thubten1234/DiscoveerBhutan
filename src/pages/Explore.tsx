@@ -2,7 +2,7 @@ import "../components/Services.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-const Service = () => {
+const Explore = () => {
   const items = [
     {
       title: "Punakha ",
@@ -74,4 +74,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Explore;

@@ -38,7 +38,7 @@ body {
   color: white;
   position: absolute;
   margin: 0;
-  padding: 0;
+  padding: 100px 0 0 0;
   text-align: center;
 }
 .intro-banner-image {
@@ -137,6 +137,9 @@ body {
     transform: translate(-50%, -50%);
     background-color: #00000055;
   }
+  .intro-banner-title {
+    padding: 0;
+  }
   .intro-banner img {
     height: 500px;
     object-fit: cover;
@@ -226,7 +229,7 @@ body {
     flex: 100%;
     max-width: 100%;
   }
-  .intro-banner-image{
+  .intro-banner-image {
     margin-top: 0;
   }
 }
