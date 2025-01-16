@@ -1,31 +1,32 @@
 import "../components/Services.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   const items = [
     {
-      title: "Punakha ",
-      description: "",
-      link: "",
-      image: "./image/punakha.jpg",
+      title: "Punakha",
+      description: "Discover the beauty of Punakha.",
+      link: "/explore/punakha",
+      image: "./image/punakha.webp",
     },
     {
       title: "Thimphu",
       description: "",
-      link: "",
+      link: "/explore/thimphu",
       image: "./image/thimphu.webp",
     },
     {
       title: "Paro",
       description: "",
-      link: "",
+      link: "/explore/paro",
       image: "./image/paro.webp",
     },
     {
       title: "Bumthang",
       description: "",
-      link: "",
+      link: "/explore/bumthang",
       image: "./image/bumthang.webp",
     },
     {
@@ -55,18 +56,19 @@ const Explore = () => {
       </div>
       <div className="image-grid-container">
         {items.map((item, index) => (
-          <a
+          <Link
             key={index}
-            href={item.link}
+            to={item.link}
             className="image-grid-item"
             aria-label={item.title}
+            onClick={() => window.scrollTo(0, 0)}
           >
             <img src={item.image} alt={item.title} className="grid-image" />
             <div className="image-overlay">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
       <Footer />
