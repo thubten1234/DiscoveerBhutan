@@ -21,10 +21,11 @@ function Aboutus() {
             <h2>A culture of thinkers & makers.</h2>
             <p>
               Discover Bhutan Holidays was founded to inspire unforgettable
-              journeys. Based in Bhutan, our mission is to highlight the
-              country's unparalleled beauty, culture, and traditions. Whether
-              you're seeking peaceful retreats or thrilling adventures, our team
-              ensures your experience is seamless, meaningful, and sustainable.
+              journeys. Based in Thimphu, Bhutan, our mission is to highlight
+              the country's unparalleled beauty, culture, and traditions.
+              Whether you're seeking peaceful retreats or thrilling adventures,
+              our team ensures your experience is seamless, meaningful, and
+              sustainable.
             </p>
             <p>
               At our core, we are dedicated to preserving Bhutan's essence
