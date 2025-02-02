@@ -47,8 +47,6 @@ function Home() {
                   the harmony of tradition and taste in every moment.
                 </strong>
               </p>
-
-              <button className="learn-btn btn-primary">Learn More</button>
             </div>
           </div>
         </div>
@@ -75,7 +73,6 @@ function Home() {
                     heritage in every serene moment of your journey.
                   </strong>
                 </p>
-                <button className="learn-btn btn-primary">Learn More</button>
               </div>
             </div>
           </div>
@@ -89,7 +86,7 @@ function Home() {
           alt="background-div-01"
           className="bgimg-01 "
         />
-        <div className="Description-01 position-absolute top-55 start-50 translate-right  text-center text-white">
+        <div className="Description-01 position-absolute translate-right  text-center text-white">
           <Container>
             <h3 className="heading-responsive display-4 display-sm-5 display-md-6 display-lg-7">
               Experience the Magic of Bhutan

@@ -101,8 +101,9 @@ body {
 }
 
 .Description-01 {
-  max-width: 40%;
-  padding: 20px;
+  width: 100%;
+  height: 30%;
+  padding: 0 20% 0 20%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -118,6 +119,8 @@ body {
 
   .Description-01 {
     max-width: 90%;
+    padding: 0;
+    height: auto;
     text-align: center;
   }
 
@@ -126,7 +129,7 @@ body {
   }
 
   .lead {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -140,17 +143,22 @@ body {
   }
 
   .intro-banner img {
-    height: 500px;
+    height: 700px;
     object-fit: cover;
+
+    z-index: 3;
   }
   .heading-responsive {
     font-size: 1.5rem;
   }
   .intro-banner {
     margin-bottom: 0;
+    margin-top: 30%;
+    max-width: 100%;
   }
   .intro-banner-title {
     top: 50%;
+    z-index: 4;
   }
   .lead {
     font-size: 1rem;
@@ -167,7 +175,7 @@ body {
 }
 
 .text-container p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 .custom-img-size {
@@ -450,7 +458,7 @@ body {
   padding: 20px;
   max-width: 800px;
   text-align: center;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -230%);
   position: relative;
@@ -507,6 +515,7 @@ body {
 .aboutus-extra {
   background-color: #799aad;
   padding: 50px;
+  padding-top: 23%;
   text-align: center;
 }
 
@@ -547,10 +556,13 @@ body {
     font-size: 1.6rem;
   }
   .aboutus-banner-overlay {
-    padding: 10px;
+    padding: 15px;
+    margin-top: -14%;
+    height: 80%;
   }
   .aboutus-extra {
     padding: 65px;
+    margin-top: 20%;
   }
   .extra-grid {
     flex-direction: column;
@@ -559,6 +571,16 @@ body {
   .mycontainer {
     display: flex;
     flex-direction: column;
+  }
+  .contact-div {
+    height: 70vh;
+    margin: -25%;
+  }
+  .contact-div img {
+    margin-top: 45%;
+  }
+  .mycontainer label {
+    text-align: left !important;
   }
 
   .mycontainer input[type="text"],
@@ -572,7 +594,7 @@ body {
 
 /*contact us form*/
 .contact-div {
-  height: 100vh;
+  height: 138vh;
   position: relative;
   padding-top: 20%;
 }
@@ -586,7 +608,7 @@ body {
 }
 .contact-form-outer {
   position: absolute;
-  top: 37%;
+  top: 40%;
   left: 20%;
   right: 0;
   padding: 10px;

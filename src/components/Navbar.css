@@ -59,14 +59,6 @@ body {
   color: #000000;
 }
 
-.island {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 4px;
-  background-color: #fff;
-  border-radius: 20px;
-  pointer-events: none;
-  transition: width 0.3s ease, left 0.3s ease;
+.navbar-brand {
+  margin-bottom: 0px;
 }
