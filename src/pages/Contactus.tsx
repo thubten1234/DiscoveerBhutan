@@ -13,7 +13,7 @@ function Contactus() {
         <h1 className="intro-banner-title">GET IN TOUCH WITH US</h1>
       </div>
       <div className="contact-div">
-        <img src="./image/contact-bg.jpg" />
+        <img src="./image/contact-bg1.jpg" />
         <div className="contact-form-outer">
           <div className="mycontainer">
             <div className="contact-form-left">

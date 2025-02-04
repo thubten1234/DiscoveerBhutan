@@ -734,7 +734,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 25rem 6rem 4rem;
+  margin: 28rem 6rem 4rem;
 }
 
 .main-content {
@@ -767,7 +767,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .content-container {
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 8rem;
     max-width: 100%;
     width: 100%;
     margin-left: 0rem;
