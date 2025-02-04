@@ -33,7 +33,7 @@ body {
 
 .navbar.solid,
 .navbar.expanded {
-  background-color: #333;
+  background-color: #bbbbbb;
 }
 
 .nav-list {
@@ -56,7 +56,7 @@ body {
 }
 
 .nav-list li a:hover {
-  color: #000000;
+  color: #5f5f5f;
 }
 
 .navbar-brand {
